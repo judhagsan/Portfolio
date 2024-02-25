@@ -1,21 +1,9 @@
 import React from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
-import perfil from "pages/imgs/Pixel_eu.png";
+import Image from "react-bootstrap/Image";
+import imagemEscolhida from "pages/imgs/Pixel_eu.png";
 
-function Home() {
-  return (
-    <div className="container">
-      <div className="row">
-        <div className="col text-center">
-          <img
-            src={perfil}
-            className="rounded mx-auto d-block"
-            alt="Descrição da Imagem"
-          />
-        </div>
-      </div>
-    </div>
-  );
+function FluidExample() {
+  return <Image src={imagemEscolhida} fluid />;
 }
 
-export default Home;
+export default FluidExample;
