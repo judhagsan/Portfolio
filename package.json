@@ -1,7 +1,7 @@
 {
   "name": "aracuan",
   "version": "1.0.0",
-  "description": "Talvez um clone de Rede social",
+  "description": "portfolio",
   "main": "index.js",
   "scripts": {
     "dev": "npm run services:up && next dev",
@@ -16,6 +16,7 @@
   "author": "Judhagsan",
   "license": "MIT",
   "dependencies": {
+    "bootstrap": "^5.3.3",
     "next": "^13.1.6",
     "pg": "^8.11.3",
     "react": "^18.2.0",
