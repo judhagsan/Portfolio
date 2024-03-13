@@ -1,9 +1,19 @@
 import React from "react";
-import Image from "react-bootstrap/Image";
-import imagemEscolhida from "pages/imgs/Pixel_eu.png";
 
-function FluidExample() {
-  return <Image src={imagemEscolhida} fluid />;
+function MyImageComponent() {
+  const style = {
+    border: "5px solid black", // Define a borda
+    borderRadius: "50%",
+    width: "200px", // Largura da borda
+    height: "200px", // Altura da borda
+    objectFit: "none", // Mantém o tamanho original da imagem
+  };
+
+  return (
+    <div>
+      <img src="pixel-perfil.png" style={style} />
+    </div>
+  );
 }
 
-export default FluidExample;
+export default MyImageComponent;
