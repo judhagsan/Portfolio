@@ -1,19 +1,12 @@
 import React from "react";
+import Avatar from "../pages/component/Perfil"; // Importação correta
 
-function MyImageComponent() {
-  const style = {
-    border: "5px solid black", // Define a borda
-    borderRadius: "50%",
-    width: "200px", // Largura da borda
-    height: "200px", // Altura da borda
-    objectFit: "none", // Mantém o tamanho original da imagem
-  };
-
+function Home() {
   return (
-    <div>
-      <img src="pages/pixel-perfil.png" style={style} />
+    <div className="flex justify-center items-center h-screen w-screen">
+      <Avatar />
     </div>
   );
 }
 
-export default MyImageComponent;
+export default Home;
