@@ -11,7 +11,7 @@ function MyImageComponent() {
 
   return (
     <div>
-      <img src="pixel-perfil.png" style={style} />
+      <img src="pages/pixel-perfil.png" style={style} />
     </div>
   );
 }
