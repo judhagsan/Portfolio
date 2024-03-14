@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 
-const Card = ({ image }) => {
+const Card = ({ image, SvgPC, SvgMOBILE }) => {
   const [isMdWidth128, setIsMdWidth128] = useState(false);
 
   useEffect(() => {
