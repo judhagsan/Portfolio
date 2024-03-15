@@ -1,14 +1,17 @@
 @media screen and (max-width: 768px) {
   .card {
-    width: 97vw; /* Defina a largura do seu cartão */
-    border-radius: 25px; /* Arredonde as bordas do cartão */
-    overflow: hidden; /* Garante que a imagem não ultrapasse os limites do cartão */
+    width: 97vw;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 0px;
+    overflow: hidden;
   }
 
   .image-container {
-    position: relative; /* Estabelece o contexto de posicionamento para a imagem */
-    width: 100%; /* Garante que a imagem ocupe todo o espaço disponível */
-    height: 53vh; /* Defina a altura da imagem */
+    position: relative;
+    width: 100%;
+    height: 53vh;
   }
   .center-item-horizontal {
     position: relative;
@@ -28,16 +31,31 @@
     margin-top: -1px;
   }
   .logo {
-    margin-top: 12px;
+    width: 35vw; /* Defina a largura do seu cartão */
+    height: 20vh;
+    overflow: hidden;
+    margin-top: 10px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 21;
   }
   .corner {
-    width: 30vw;
+    width: 25vw;
+    height: auto;
     overflow: hidden;
+    margin-bottom: -4px;
+    margin-left: 0px;
   }
-  .align-Corner {
+  .cartao {
+    height: 53vh;
+    position: relative;
+  }
+
+  .corner-position {
     position: absolute;
-    margin-left: -0.52px;
-    bottom: 45.7vh;
     z-index: 20;
+    bottom: 0px;
+    left: 0;
   }
 }

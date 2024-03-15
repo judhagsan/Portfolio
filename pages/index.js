@@ -7,10 +7,12 @@ import imageLogo from "../public/logo.png";
 function Home() {
   return (
     <div>
-      <div>
-        <HomeFundo image={imageFundo} imageLogo={imageLogo} />
-        <div>
+      <div className="cartao">
+        <div className="corner-position">
           <Corner />
+        </div>
+        <div>
+          <HomeFundo image={imageFundo} imageLogo={imageLogo} />
         </div>
       </div>
     </div>

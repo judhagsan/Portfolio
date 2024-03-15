@@ -3,7 +3,7 @@ import React from "react";
 function Corner() {
   return (
     <div>
-      <div className="corner align-Corner">
+      <div className="corner">
         <svg
           id="Layer_2"
           data-name="Layer 2"
