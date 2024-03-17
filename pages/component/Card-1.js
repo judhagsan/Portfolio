@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 
-function HomeFundo({ image, imageLogo }) {
+function HomeFundo({ image }) {
   return (
     <div>
       {/* logo */}
