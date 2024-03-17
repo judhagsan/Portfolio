@@ -27,11 +27,24 @@ function Home() {
       </div>
 
       <div className="cartao2">
-        <div className="corner-position2">
-          <Corner2 />
-        </div>
         <div>
           <Card2 image={imageFundo} />
+          <div className="corner-position2">
+            <Corner2 />
+            <h1
+              style={{
+                position: "absolute",
+                top: 0,
+                left: 12,
+                fontSize: "18px",
+                textAlign: "center",
+              }}
+            >
+              DEV
+              <br />
+              WORKS
+            </h1>
+          </div>
         </div>
       </div>
     </div>
