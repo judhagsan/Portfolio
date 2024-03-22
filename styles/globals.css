@@ -328,6 +328,7 @@ body {
     width: auto;
     height: 55vh;
     position: relative;
+    z-index: 0;
   }
   .cartao2 {
     height: 42.8vh;
