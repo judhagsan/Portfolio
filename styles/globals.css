@@ -94,6 +94,7 @@ body {
   width: 55vw;
   height: 98vh;
   position: relative;
+  z-index: 1;
 }
 .cartao2 {
   height: 98vh;
@@ -461,8 +462,8 @@ body {
   .tituloPositionRight {
     position: fixed;
     z-index: 22;
-    top: -15%;
-    right: 15.4%;
+    top: 49.7%;
+    right: 17%;
     text-align: center;
   }
 }
