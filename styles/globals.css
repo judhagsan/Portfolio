@@ -7,6 +7,233 @@ body {
   background-color: white;
 }
 
+.geral {
+  height: 100%;
+  overflow: hidden;
+}
+.card {
+  width: 98vw;
+  border-radius: 3vw;
+  overflow: hidden;
+}
+.card2 {
+  width: 98vw;
+  border-radius: 3vw;
+  overflow: hidden;
+}
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 98vh;
+}
+.image-container2 {
+  position: absolute;
+  width: 22%;
+  height: 98vh;
+  right: 0%;
+  top: 0%;
+  box-shadow: 0 0 0 0px #fff;
+}
+.image-container3 {
+  position: absolute;
+  width: 22%;
+  height: 98vh;
+  left: 0%;
+  top: 0%;
+  box-shadow: 0 0 0 0px #fff;
+}
+.center-item-horizontal {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+}
+.center-item-horizontal-z20 {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 20;
+}
+.logo-bg {
+  width: 18vw; /* Defina a largura do seu cartão */
+  height: 20vh;
+  overflow: hidden;
+  margin-top: -1px;
+}
+.logo {
+  width: 7vw; /* Defina a largura do seu cartão */
+  height: 10vh;
+  overflow: hidden;
+  margin-top: 0.5%;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 21;
+}
+.corner {
+  width: 20vw;
+  height: auto;
+  overflow: hidden;
+  margin-bottom: -4px;
+  margin-left: 0px;
+  display: none;
+}
+.lateral {
+  width: 25vw;
+  height: auto;
+  overflow: hidden;
+  margin-left: 0px;
+}
+.corner2 {
+  width: 15vw;
+  height: auto;
+  overflow: hidden;
+  margin-bottom: -4px;
+  margin-left: 0px;
+}
+.cartao {
+  width: 55vw;
+  height: 98vh;
+  position: relative;
+}
+.cartao2 {
+  height: 98vh;
+  position: relative;
+  margin-top: -98vh;
+}
+.Lateral-position {
+  position: absolute;
+  z-index: 20;
+  bottom: 0px;
+  left: 0;
+  margin-left: -0.2%;
+}
+.corner-position2 {
+  position: absolute;
+  z-index: 21;
+  left: 81.5%;
+  top: -0.4%;
+}
+.corner-position3 {
+  position: absolute;
+  z-index: 21;
+  left: 3.5%;
+  top: -0.4%;
+}
+.card-info {
+  width: 20vw;
+  height: auto;
+  overflow: hidden;
+  margin-bottom: -4px;
+  margin-left: 0px;
+}
+.card-info-position {
+  position: absolute;
+  z-index: 20;
+  bottom: 11%;
+  left: 62%;
+}
+
+.contact {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  z-index: 22;
+  margin-top: -5%;
+  margin-left: 3%;
+}
+.form textarea {
+  padding-left: 5%;
+  padding-top: 2%;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-top-left-radius: 0.5vw;
+  border-top-right-radius: 0.5vw;
+  border-bottom-right-radius: 2vw;
+  border-bottom-left-radius: 2vw;
+  box-sizing: border-box;
+  resize: none;
+  font-family: SmallBoldPixel;
+  font-size: 1.5vw;
+  line-height: 0.6;
+  width: 64%;
+  margin-left: 30%;
+  margin-top: 0.5%;
+}
+.form p {
+  font-size: 1.7vw;
+  font-family: SmallBoldPixel;
+  color: #ff4b68;
+  margin-top: 5%;
+  margin-left: 7%;
+  margin-bottom: 0%;
+  letter-spacing: 0.1vw;
+}
+.form input[type="nome"],
+.form input[type="email"] {
+  width: 82%;
+  font-family: SmallBoldPixel;
+  font-size: 1.5vw;
+  border-radius: 20px;
+  padding-left: 10%;
+  margin-bottom: 1%;
+  border-color: black;
+}
+.form input[type="nome"]:focus,
+.form input[type="email"]:focus {
+  outline-color: #ff4b68;
+}
+.form textarea:focus {
+  outline-color: #ff4b68;
+}
+.form button {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  margin-left: -3%;
+  margin-bottom: -7%;
+  width: 28%;
+  height: 42%;
+  border: none;
+  border-radius: 100%;
+  background-color: white;
+}
+.form button:focus {
+  background-color: gray;
+}
+.send {
+  width: 60%;
+  margin-top: 6%;
+  margin-left: 25%;
+  margin-right: auto;
+}
+.titulo {
+  color: #ff4b68;
+  font-family: SmallBoldPixel;
+  font-size: 1.5vw;
+  line-height: 0.5;
+}
+.linha {
+  color: #118df0;
+  font-family: SmallBoldPixel;
+  font-size: 2vw;
+  line-height: 0.5;
+}
+.tituloPositionLeft {
+  position: absolute;
+  z-index: 22;
+  margin-top: -1.5%;
+  margin-left: 7.8%;
+  text-align: center;
+}
+.tituloPositionRight {
+  position: absolute;
+  z-index: 22;
+  top: -2.8%;
+  right: 7%;
+  text-align: center;
+}
+
 @media screen and (max-width: 768px) {
   .geral {
     height: 100%;
@@ -58,16 +285,16 @@ body {
     z-index: 20;
   }
   .logo-bg {
-    width: 60vw; /* Defina a largura do seu cartão */
+    width: 50vw; /* Defina a largura do seu cartão */
     height: 20vh;
     overflow: hidden;
     margin-top: -1px;
   }
   .logo {
-    width: 25vw; /* Defina a largura do seu cartão */
+    width: 18vw; /* Defina a largura do seu cartão */
     height: 20vh;
     overflow: hidden;
-    margin-top: 10px;
+    margin-top: 5px;
     position: absolute;
     left: 50%;
     transform: translate(-50%);
@@ -79,21 +306,32 @@ body {
     overflow: hidden;
     margin-bottom: -4px;
     margin-left: 0px;
+    display: inherit;
+  }
+  .lateral {
+    width: 20vw;
+    height: auto;
+    overflow: hidden;
+    margin-bottom: -4px;
+    margin-left: 0px;
+    display: none;
   }
   .corner2 {
-    width: 24vw;
+    width: 34vw;
     height: auto;
     overflow: hidden;
     margin-bottom: -4px;
     margin-left: 0px;
   }
   .cartao {
+    width: auto;
     height: 55vh;
     position: relative;
   }
   .cartao2 {
     height: 42.8vh;
     position: relative;
+    margin-top: 0px;
   }
   .corner-position {
     position: absolute;
@@ -104,15 +342,14 @@ body {
   .corner-position2 {
     position: absolute;
     z-index: 21;
-    left: 50.8%;
+    left: 57.5%;
     top: -10.1%;
   }
   .corner-position3 {
     position: absolute;
     z-index: 21;
-    left: 24.5%;
+    left: 7%;
     top: 1.9%;
-    transform: scaleX(-1);
   }
   .card-info {
     width: 60vw;
@@ -205,27 +442,27 @@ body {
   .titulo {
     color: #ff4b68;
     font-family: SmallBoldPixel;
-    font-size: 5vw;
+    font-size: 4vw;
     line-height: 0.5;
   }
   .linha {
     color: #118df0;
     font-family: SmallBoldPixel;
-    font-size: 7vw;
+    font-size: 4.5vw;
     line-height: 0.5;
   }
   .tituloPositionLeft {
     position: absolute;
     z-index: 22;
-    margin-top: -2%;
-    margin-left: 31%;
-    text-align: left;
+    margin-top: -2.5%;
+    margin-left: 17.5%;
+    text-align: center;
   }
   .tituloPositionRight {
-    position: absolute;
+    position: fixed;
     z-index: 22;
     top: -15%;
-    right: 31%;
-    text-align: right;
+    right: 15.4%;
+    text-align: center;
   }
 }

@@ -1,6 +1,7 @@
 import React from "react";
 import Corner from "../pages/component/Corner";
 import Corner2 from "../pages/component/Corner-2";
+import Lateral from "./component/Lateral";
 import Card1 from "./component/Card-1";
 import Card2 from "../pages/component/Card-2";
 import Card3 from "../pages/component/Card-3";
@@ -12,10 +13,13 @@ import imageFundo from "../public/OFR-55.jpg";
 function Home() {
   return (
     <div className="geral">
-      <div className="cartao">
+      <div className="cartao center-item-horizontal">
         <div className="card-info-position">
           <CardInfo />
           <Contact />
+        </div>
+        <div className="Lateral-position">
+          <Lateral />
         </div>
         <div className="corner-position">
           <Corner />
@@ -28,19 +32,16 @@ function Home() {
       <div className="cartao2">
         <div>
           <div className="tituloPositionRight">
-            <TituloCard linha1={"Super"} linha2={"Pista"} />
+            <TituloCard linha1={"Super Pista"} />
+          </div>
+          <div className="tituloPositionLeft">
+            <TituloCard linha1={"JL Moldes"} />
           </div>
           <Card2 image={imageFundo} />
+          <Card3 image={imageFundo} />
           <div className="corner-position2">
             <Corner2 />
           </div>
-        </div>
-
-        <div>
-          <div className="tituloPositionLeft">
-            <TituloCard linha1={"JL"} linha2={"Moldes"} />
-          </div>
-          <Card3 image={imageFundo} />
           <div className="corner-position3">
             <Corner2 />
           </div>

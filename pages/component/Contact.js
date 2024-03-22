@@ -1,7 +1,34 @@
 import React, { useState } from "react";
 import TextareaAutosize from "react-textarea-autosize";
+import { useEffect } from "react";
 
 function EmailContact() {
+  const [minRows, setMinRows] = useState(3);
+  const [maxRows, setMaxRows] = useState(5);
+
+  useEffect(() => {
+    function verificarTamanhoTela() {
+      if (window.innerWidth >= 768) {
+        setMinRows(7);
+        setMaxRows(7);
+      } else {
+        setMinRows(4);
+        setMaxRows(4);
+      }
+    }
+
+    // Verifique o tamanho da tela quando o componente é montado
+    verificarTamanhoTela();
+
+    // Adicione um listener para redimensionamento da tela
+    window.addEventListener("resize", verificarTamanhoTela);
+
+    // Cleanup: remova o listener quando o componente é desmontado
+    return () => {
+      window.removeEventListener("resize", verificarTamanhoTela);
+    };
+  }, []);
+
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
@@ -55,8 +82,8 @@ function EmailContact() {
           onChange={handleMessageChange}
           placeholder="Digite sua mensagem"
           required
-          minRows={3} // Defina o número mínimo de linhas
-          maxRows={5} // Defina o número máximo de linhas
+          minRows={minRows}
+          maxRows={maxRows}
         />
         <button type="submit">
           <div>

@@ -5,11 +5,7 @@ function titulo({ linha1, linha2 }) {
     <div>
       <p className="titulo">
         PROJETO<br></br>
-        <span className="linha">
-          {linha1}
-          <br></br>
-          {linha2}
-        </span>
+        <span className="linha">{linha1}</span>
       </p>
     </div>
   );
