@@ -1,51 +1,36 @@
 import React from "react";
-import Corner from "../pages/component/Corner";
-import Corner2 from "../pages/component/Corner-2";
-import Lateral from "./component/Lateral";
-import Card1 from "./component/Card-1";
-import Card2 from "../pages/component/Card-2";
-import Card3 from "../pages/component/Card-3";
-import CardInfo from "../pages/component/Card-Info";
-import Contact from "../pages/component/Contact";
-import TituloCard from "../pages/component/titulo-card";
-import imageFundo from "../public/OFR-55.jpg";
+import Card from "./component/Card";
+import HelloCard from "./component/HelloCard";
+import ImageFundo from "../public/OFR-55.jpg";
+import ImageSuperPista from "../public/P_superpista.jpg";
 
 function Home() {
   return (
-    <div className="geral">
-      <div className="cartao center-item-horizontal">
-        <div className="card-info-position">
-          <CardInfo />
-          <Contact />
-        </div>
-        <div className="Lateral-position">
-          <Lateral />
-        </div>
-        <div className="corner-position">
-          <Corner />
-        </div>
-        <div>
-          <Card1 image={imageFundo} />
-        </div>
+    <div className="flex flex-row  h-screen">
+      {/* para adicionar ao lado esquerdo */}
+      {/* <div className="w-1/4 font-custom"></div> */}
+      <div className="w-3/4">
+        <HelloCard imageUrl={ImageFundo} />
       </div>
-
-      <div className="cartao2">
-        <div>
-          <div className="tituloPositionRight">
-            <TituloCard linha1={"Super Pista"} />
-          </div>
-          <div className="tituloPositionLeft">
-            <TituloCard linha1={"JL Moldes"} />
-          </div>
-          <Card2 image={imageFundo} />
-          <Card3 image={imageFundo} />
-          <div className="corner-position2">
-            <Corner2 />
-          </div>
-          <div className="corner-position3">
-            <Corner2 />
-          </div>
-        </div>
+      <div className="w-1/4 font-custom">
+        <Card
+          imageUrl={ImageFundo}
+          title={"Projeto:"}
+          titlePositionLeft={"10.2%"}
+          description={"JL Moldes"}
+          fontSize={"2vw"}
+          descriptionPositionLeft={"8.7%"}
+          wSvg={"15%"}
+        />
+        <Card
+          imageUrl={ImageSuperPista}
+          title={"Projeto:"}
+          titlePositionLeft={"10%"}
+          description={"Super Pista"}
+          fontSize={"1.8vw"}
+          descriptionPositionLeft={"8.4%"}
+          wSvg={"15%"}
+        />
       </div>
     </div>
   );
