@@ -1,33 +1,43 @@
-import React from "react";
-import Image from "next/image";
+import React, { useEffect, useState } from "react";
+import dynamic from "next/dynamic";
 
-function Card({ imageUrl }) {
+// Carregando o ReactPlayer dinamicamente com no SSR (Server-Side Rendering)
+const ReactPlayer = dynamic(() => import("react-player"), { ssr: false });
+
+function Card({ videoUrl }) {
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
   const cardStyle = {
-    Width: "100%",
-    height: "98%",
+    width: "100%",
+    height: "100%",
     borderRadius: "2vw",
     overflow: "hidden",
+    position: "relative",
   };
 
   const svgStyle = {
     position: "absolute",
     zIndex: 2,
-    width: "16%",
+    width: "26%",
     marginLeft: "4.5%",
     marginTop: "-0.05%",
   };
 
-  const LogoStyle = {
+  const logoStyle = {
     position: "absolute",
     zIndex: 3,
-    width: "8%",
-    height: "5%",
-    marginLeft: "8.5%",
+    width: "13%",
+    marginLeft: "11%",
     marginTop: "0.3%",
   };
+
   return (
-    <div style={cardStyle} className="m-2">
-      <div style={LogoStyle}>
+    <div style={cardStyle} className="bg-black mx-0">
+      <div style={logoStyle}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 351.01 68.4"
@@ -58,6 +68,7 @@ function Card({ imageUrl }) {
           </g>
         </svg>
       </div>
+
       <div
         style={{
           position: "relative",
@@ -65,13 +76,21 @@ function Card({ imageUrl }) {
           height: "100%",
         }}
       >
-        <Image
-          src={imageUrl}
-          alt="Imagem"
-          layout="fill"
-          objectFit="cover"
-          objectPosition="center"
-        />
+        {isMounted && (
+          <ReactPlayer
+            url={videoUrl}
+            width="100%"
+            height="100%"
+            controls
+            config={{
+              file: {
+                attributes: {
+                  onContextMenu: (e) => e.preventDefault(),
+                },
+              },
+            }}
+          />
+        )}
       </div>
     </div>
   );

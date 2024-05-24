@@ -9,10 +9,12 @@ function Card({
   wSvg,
   titlePositionLeft,
   fontSize,
+  loaded,
+  animationType,
 }) {
   const cardStyle = {
     Width: "100%",
-    height: "48.6%",
+    height: "100%",
     borderRadius: "2vw",
     overflow: "hidden",
   };
@@ -31,7 +33,7 @@ function Card({
     position: "absolute",
     zIndex: 2,
     width: wSvg,
-    marginLeft: "4.5%",
+    marginLeft: "2%",
     marginTop: "-0.05%",
   };
 
@@ -46,7 +48,7 @@ function Card({
   };
 
   return (
-    <div style={cardStyle} className="m-2">
+    <div style={cardStyle} className={`card ${loaded ? animationType : ""}`}>
       <div style={svgStyle}>
         <svg
           id="Layer_2"
@@ -77,6 +79,9 @@ function Card({
           layout="fill"
           objectFit="cover"
           objectPosition="center"
+          onContextMenu={(e) => {
+            e.preventDefault();
+          }}
         />
       </div>
     </div>
