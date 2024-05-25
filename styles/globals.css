@@ -7,21 +7,11 @@
   src: url("../public/SmallBoldPixel.ttf") format("truetype");
   /* Adicione outros formatos de fonte se necessário */
 }
-body::-webkit-scrollbar {
-  width: 0;
-  height: 0;
-}
-
 /* Para navegadores que suportam scrollbar-width (Firefox) */
 body {
-  scrollbar-width: none;
+  overflow: hidden;
 }
 
-/* Remover scrollbars do body, mas permitir rolagem */
-body {
-  overflow: -moz-scrollbars-none; /* Para navegadores Mozilla */
-  -ms-overflow-style: none; /* Para navegadores Internet Explorer e Edge */
-}
 /* CSS */
 .card {
   transition: transform 1.5s ease-in-out; /* Definindo uma transição padrão para todos os cards */
