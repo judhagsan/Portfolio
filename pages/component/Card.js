@@ -9,8 +9,6 @@ function Card({
   wSvg,
   titlePositionLeft,
   fontSize,
-  loaded,
-  animationType,
 }) {
   const cardStyle = {
     Width: "100%",
@@ -48,7 +46,7 @@ function Card({
   };
 
   return (
-    <div style={cardStyle} className={`card ${loaded ? animationType : ""}`}>
+    <div style={cardStyle}>
       <div style={svgStyle}>
         <svg
           id="Layer_2"
@@ -66,19 +64,12 @@ function Card({
         <p style={titleStyle}>{title}</p>
         <p style={descriptionStyle}>{description}</p>
       </div>
-      <div
-        style={{
-          position: "relative",
-          width: "100%",
-          height: "100%",
-        }}
-      >
+      <div className="h-full w-full relative">
         <Image
+          className="object-cover"
           src={imageUrl}
           alt="Imagem"
-          layout="fill"
-          objectFit="cover"
-          objectPosition="center"
+          fill
           onContextMenu={(e) => {
             e.preventDefault();
           }}

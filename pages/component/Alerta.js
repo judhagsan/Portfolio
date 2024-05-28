@@ -21,8 +21,10 @@ const MobileAlert = () => {
   }
 
   return (
-    <div className="fixed text-4xl inset-0 w-screen h-screen bg-red-600 text-white flex items-center justify-center z-50">
-      Para uma melhor experiência, acesse do computador.
+    <div className="fixed inset-0 flex items-center justify-center w-screen h-screen bg-red-600 text-white z-50">
+      <p className="text-2xl text-center font-bold">
+        Para uma melhor experiência, vire o celular ou acesse do computador.
+      </p>
     </div>
   );
 };

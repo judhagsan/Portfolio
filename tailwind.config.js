@@ -10,10 +10,31 @@ module.exports = {
   ],
   theme: {
     extend: {
+      wordSpacing: {
+        custom: "-0.5vw",
+        custom2: "0.2vw",
+      },
       fontFamily: {
         custom: ["SmallBoldPixel", "sans-serif"],
       },
     },
   },
-  plugins: [],
+  variants: {
+    extend: {
+      wordSpacing: ["responsive"],
+    },
+  },
+  plugins: [
+    function ({ addUtilities }) {
+      const newUtilities = {
+        ".word-spacing-custom": {
+          wordSpacing: "-0.5vw",
+        },
+        ".word-spacing-custom2": {
+          wordSpacing: "-0.3vw",
+        },
+      };
+      addUtilities(newUtilities, ["responsive", "hover"]);
+    },
+  ],
 };

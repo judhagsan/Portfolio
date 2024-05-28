@@ -5,6 +5,7 @@ import HelloCard from "./component/HelloCard";
 import MobileAlert from "./component/Alerta";
 
 import Elf from "../public/Fairy_Face_3.jpg";
+import vivo from "../public/T_project_vivo.gif";
 import survive from "../public/LTS-445-JS.jpg";
 import pilot from "../public/Pilot_mech_.jpg";
 
@@ -15,9 +16,9 @@ function Home() {
       {/* para adicionar ao lado esquerdo */}
       <div className="w-1/4 h-2/6 pt-2 pl-2 grid-rows-3 space-y-2 pb-0.5 font-custom">
         <div className="w-full h-full">
-          <Link href={"/fairy"}>
+          <Link href={"/vivo"}>
             <Card
-              imageUrl={Elf}
+              imageUrl={vivo}
               title={"Motion Design"}
               titlePositionLeft={"6.2%"}
               description={"vivo"}

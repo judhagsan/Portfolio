@@ -9,33 +9,19 @@ function Card({
   titulo,
   tituloT,
   tituloL,
-  loaded,
-  animationType,
   cortexto,
+  svgWidth,
 }) {
   const cardStyle = {
-    width: "100%",
-    height: "100%",
     borderRadius: "2vw",
     overflow: "hidden",
     position: "relative", // Adicionado para o posicionamento correto do retângulo
   };
 
-  const rectStyle = {
-    position: "absolute",
-    top: "71%",
-    left: "2.5%",
-    zIndex: 10,
-    width: "95%",
-    height: "26%",
-    backgroundColor: "rgba(256, 256, 256, 0.88)", // Cor de fundo do retângulo
-    borderRadius: "1vw", // Mesmo raio de borda que o contêiner pai
-  };
-
   const svgStyle = {
     position: "absolute",
     zIndex: 10,
-    width: "26%",
+    width: svgWidth,
     marginLeft: "10%",
     marginTop: "-0.05%",
   };
@@ -46,28 +32,26 @@ function Card({
   };
 
   const descriptionStyle = {
-    fontSize: "2vw",
-    letterSpacing: "0.1vw",
-    wordSpacing: "-0.5vw",
-    lineHeight: "1.2vw",
     color: cortexto,
   };
 
   return (
-    <div
-      style={cardStyle}
-      className={`card ${loaded ? animationType : ""} z-30 mx-0`}
-    >
+    <div style={cardStyle} className="w-full h-full relative z-30 mx-0">
       <h1 style={title} className="z-20 absolute text-[3vw]">
         {titulo}
       </h1>
-      <div style={rectStyle}>
-        <div style={descriptionStyle} className="px-4 py-2 text-justify">
-          <p className="indent-4 mb-3">{P1}</p>
-          <p className="indent-4 mb-3">{P2}</p>
-          <p className="indent-4 mb-3">{P3}</p>
+      <div className="place-items-center absolute top-[71%] left-[2.5%] z-10 w-[95%] h-[26%] bg-[rgba(255,255,255,0.88)] rounded-[1vw] overflow-hidden flex">
+        <div
+          style={descriptionStyle}
+          className="px-2 text-justify lg:text-[2vw] md:text-[1.5vw] tracking-wider
+          lg:leading-6 md:leading-3 lg:word-spacing-custom md:word-spacing-custom2"
+        >
+          <p className="lg:indent-4 mt-2 md:indent-2 lg:mb-3 md:mb-1">{P1}</p>
+          <p className="lg:indent-4 md:indent-2 lg:mb-3 md:mb-1">{P2}</p>
+          <p className="lg:indent-4 md:indent-2 lg:mb-3 md:mb-1">{P3}</p>
         </div>
       </div>
+
       <div style={svgStyle}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -79,19 +63,12 @@ function Card({
           </g>
         </svg>
       </div>
-      <div
-        style={{
-          position: "relative",
-          width: "100%",
-          height: "100%",
-        }}
-      >
+      <div className="relative w-full h-full">
         <Image
+          className="object-cover"
           src={imageUrl}
           alt="Imagem"
-          layout="fill"
-          objectFit="cover"
-          objectPosition="center"
+          fill
           onContextMenu={(e) => {
             e.preventDefault();
           }}
