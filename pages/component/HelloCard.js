@@ -56,7 +56,6 @@ function Card({ videoUrl }) {
           </g>
         </svg>
       </div>
-
       <div style={svgStyle}>
         <svg
           xmlns="http://www.w3.org/2000/svg"

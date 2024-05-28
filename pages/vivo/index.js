@@ -22,7 +22,7 @@ import T8 from "public/vivo/1_Vivo_15s_1x1_V2.gif";
 
 function fadaPage() {
   return (
-    <div className="flex flex-col md:flex-row h-screen font-custom">
+    <div className="bg-purple-950 flex flex-col md:flex-row h-screen font-custom">
       <MobileAlert />
 
       {/* Lado Esquerdo */}
@@ -53,6 +53,8 @@ function fadaPage() {
           svgWidth={"26%"}
           videoUrl={V1}
           thumbUrl={T1}
+          svgColor={"#3b0764"}
+          textColor={"White"}
         />
         <VideoCard videoUrl={V2} thumbUrl={T2} />
       </div>

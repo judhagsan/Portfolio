@@ -12,7 +12,7 @@ import F7 from "public/Fairy_Face_7.jpg";
 
 function fadaPage() {
   return (
-    <div className="flex flex-col md:flex-row h-screen font-custom">
+    <div className="bg-green-200 flex flex-col md:flex-row h-screen font-custom">
       <MobileAlert />
 
       {/* Lado Esquerdo */}
@@ -28,10 +28,12 @@ function fadaPage() {
       <div className="w-3/4 h-full pt-2 pl-2 pr-2 pb-2">
         <CenterCard
           titulo={"Fairy"}
-          tituloT={"-1.5%"}
-          tituloL={"19.3%"}
-          svgWidth={"26%"}
+          tituloT={"-2.5%"}
+          tituloL={"16%"}
+          svgWidth={"20%"}
           imageUrl={F3}
+          svgColor={"#bbf7d0"}
+          textColor={""}
           P1={` O modelo foi criado para promover jogos de fantasia, o objetivo era
             criar um personagem charmoso e versátil, capaz de capturar a imaginação
             dos jogadores e levar a uma experiência de jogo única e envolvente.`}

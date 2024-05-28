@@ -15,7 +15,7 @@ import Z3 from "public/Zombie4.jpg";
 
 function fadaPage() {
   return (
-    <div className="flex flex-col md:flex-row h-screen font-custom">
+    <div className="bg-rose-950 flex flex-col md:flex-row h-screen font-custom">
       <MobileAlert />
 
       {/* Lado Esquerdo */}
@@ -35,6 +35,8 @@ function fadaPage() {
           tituloL={"17.6%"}
           svgWidth={"26%"}
           imageUrl={F3}
+          svgColor={"#4c0519"}
+          textColor={"White"}
           P1={` Criados para propaganda de jogos de terror, feitos com Riggs para controle facial e corporal em especial o do zumbi que é capaz de mudar sua forma para possibilitar criação de hordas.`}
           P2={` Esses modelos foram utilizados em propagandas para os games como Left to Survive, State of Survive e outros.`}
           cortexto={"Black"}

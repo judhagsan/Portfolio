@@ -8,7 +8,7 @@ function Card({ P1, P2, P3, cortexto }) {
 
   return (
     <div className="w-full h-full relative mx-0">
-      <div className="place-items-center rounded-[1vw] bg-purple-950 overflow-hidden flex">
+      <div className="place-items-center rounded-[1vw] overflow-hidden flex">
         <div
           style={descriptionStyle}
           className="px-2 text-justify lg:text-[2vw] md:text-[1.5vw] tracking-wider

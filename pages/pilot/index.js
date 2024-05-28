@@ -12,7 +12,7 @@ import F7 from "public/Pilot_mech_5.jpg";
 
 function fadaPage() {
   return (
-    <div className="flex flex-col md:flex-row h-screen font-custom">
+    <div className="bg-neutral-800 flex flex-col md:flex-row h-screen font-custom">
       <MobileAlert />
 
       {/* Lado Esquerdo */}
@@ -32,6 +32,8 @@ function fadaPage() {
           tituloL={"19%"}
           svgWidth={"26%"}
           imageUrl={F3}
+          svgColor={"#262626"}
+          textColor={"White"}
           P1={` O principal objetivo ao criar este modelo foi promover jogos como Mech Arena e War Robots. A piloto foi desenvolvida com design futurista e elegante para captar a atenção do público e transmitir uma experiência de jogo emocionante e envolvente.`}
           P2={` Foi desenvolvido um rigg que permite uma variedade de poses e movimentos fluidos, sendo capaz de controlar totalmente suas expressões faciais, comunicando diferentes emoções e sentimentos nas propagandas.`}
           cortexto={"Black"}
