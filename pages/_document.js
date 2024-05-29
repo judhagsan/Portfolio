@@ -5,7 +5,8 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          <link rel="shortcut icon" href="public/Asset 21@2x-Logo.png" />
+          <title>Judhagsan</title>
+          <link rel="shortcut icon" href="/pixel-perfil.png" />
         </Head>
         <body>
           <Main />
