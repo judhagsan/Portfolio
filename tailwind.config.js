@@ -8,22 +8,7 @@ module.exports = {
     // Or if using `src` directory:
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-  theme: {
-    extend: {
-      wordSpacing: {
-        custom: "-0.5vw",
-        custom2: "0.2vw",
-      },
-      fontFamily: {
-        custom: ["SmallBoldPixel", "sans-serif"],
-      },
-    },
-  },
-  variants: {
-    extend: {
-      wordSpacing: ["responsive"],
-    },
-  },
+  theme: {},
   plugins: [
     function ({ addUtilities }) {
       const newUtilities = {
