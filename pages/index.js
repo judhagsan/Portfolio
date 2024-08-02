@@ -58,11 +58,10 @@ function Home() {
       </div>
 
       {/* Seção Central */}
-      <div className="w-3/4 h-full flex flex-col items-center pl-2 pr-2 pb-2 relative">
+      <div className="w-3/4 h-full flex flex-col items-center pl-2 pr-2 pb-2">
         <div className="absolute top-2 left-[37%] z-30">
           <div className="grid grid-cols-2 gap-2">
-            <Contacts Texto="judhagsan@gmail.com" />
-            <Contacts Texto="(11) 95092-5372" />
+            <Contacts Texto="hello@judhagsan.com" />
           </div>
         </div>
 
@@ -70,12 +69,8 @@ function Home() {
           <HelloCard videoUrl="https://player.vimeo.com/video/950032543?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" />
         </div>
 
-        <div className="grid grid-cols-3 pt-2 gap-2 w-full">
+        <div className="grid grid-cols-2 pt-2 gap-2 w-full h-2/4">
           <Card imageUrl={I1} />
-          <Text
-            P1="Bem-vindo ao meu portfólio! Aqui, apresento projetos desde personagens expressivos até efeitos visuais dinâmicos e paisagens abstratas, cada projeto destaca a arte para criar experiências visuais cativantes. Fique à vontade para explorar meus trabalhos."
-            cortexto="Black"
-          />
           <Card imageUrl={I2} />
         </div>
       </div>

@@ -42,7 +42,7 @@ function Card({
 
   return (
     <div style={cardStyle} className="w-full h-full relative z-30 mx-0">
-      <h1 style={title} className="z-20 absolute text-[3vw]">
+      <h1 style={title} className="z-20 absolute text-[2.2vw]">
         {titulo}
       </h1>
       <div style={svgStyle}>

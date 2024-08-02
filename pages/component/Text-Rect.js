@@ -5,14 +5,19 @@ function Card({ P1, P2, P3, cortexto }) {
     color: cortexto,
   };
 
+  const cardStyle = {
+    Width: "100%",
+    height: "100%",
+    borderRadius: "2vw",
+    overflow: "hidden",
+  };
+
   return (
-    <div className="w-full h-full relative mx-0">
-      <div className="place-items-center rounded-[1vw] overflow-hidden flex">
-        <div style={descriptionStyle} className="text-justify">
-          <p className="text-base font-medium">{P1}</p>
-          <p className="text-base font-medium">{P2}</p>
-          <p className="text-base font-medium">{P3}</p>
-        </div>
+    <div className={cardStyle}>
+      <div style={descriptionStyle} className="text-justify">
+        <p className="text-base font-medium">{P1}</p>
+        <p className="text-base font-medium">{P2}</p>
+        <p className="text-base font-medium">{P3}</p>
       </div>
     </div>
   );
