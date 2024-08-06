@@ -3,15 +3,14 @@ import Link from "next/link";
 import Card from "./component/Card";
 import HelloCard from "./component/HelloCard";
 import MobileAlert from "./component/Alerta";
-import Text from "./component/Text-Rect";
-import Contacts from "./component/contact";
+import Buttons from "./component/Buttons";
 
 import Elf from "../public/Fairy_Face_3.jpg";
 import vivo from "../public/T_project_vivo.gif";
 import survive from "../public/LTS-445-JS.jpg";
 import pilot from "../public/Pilot_mech_.jpg";
-import colection from "public/Colection.gif";
-import frames from "public/frames/Walk_on_water.gif";
+import colibru from "public/Colection.gif";
+import frames from "public/Mestre_intro.gif";
 import I1 from "public/judha-guilherme-fish1.jpg";
 import I2 from "public/judha-guilherme-render-4.jpg";
 
@@ -33,9 +32,9 @@ function Home() {
             wSvg="15%"
           />
         </Link>
-        <Link href="/collection">
+        <Link href="/colibri">
           <Card
-            imageUrl={colection}
+            imageUrl={colibru}
             title="Motion Design"
             titlePositionLeft="6%"
             description="collection"
@@ -44,7 +43,7 @@ function Home() {
             wSvg="15%"
           />
         </Link>
-        <Link href="/frames">
+        <Link href="/mestre">
           <Card
             imageUrl={frames}
             title="Motion Design"
@@ -61,7 +60,18 @@ function Home() {
       <div className="w-3/4 h-full flex flex-col items-center pl-2 pr-2 pb-2">
         <div className="absolute top-2 left-[37%] z-30">
           <div className="grid grid-cols-2 gap-2">
-            <Contacts Texto="hello@judhagsan.com" />
+            <Buttons
+              Texto="Contact"
+              link="https://www.example.com"
+              bgColor="bg-gray-100" // Cor de fundo
+              textColor="text-Black" // Cor do texto
+            />
+            <Buttons
+              Texto="About"
+              link="https://www.example.com"
+              bgColor="bg-gray-100" // Cor de fundo
+              textColor="text-Black" // Cor do texto
+            />
           </div>
         </div>
 

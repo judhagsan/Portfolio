@@ -1,5 +1,6 @@
 import React from "react";
 import Card from "../component/Card";
+import Buttons from "../component/Buttons";
 
 import VideoCard from "../component/CenterCard-video";
 import MobileAlert from "../component/Alerta";
@@ -45,12 +46,40 @@ function fadaPage() {
       </div>
 
       {/* Centro */}
-      <div className="w-[55%] h-full p-2 flex flex-col space-y-2">
+      <div className="w-1/2 h-full px-2 pb-2 flex flex-col space-y-2">
+        <div className="z-50 absolute left-[45%] py-2">
+          <div className="grid grid-cols-3 gap-2">
+            <Buttons
+              Texto="Work"
+              link="https://www.judhagsan.com"
+              bgColor="bg-purple-950" // Cor de fundo
+              textColor="text-white" // Cor do texto
+              hoverBgColor="hover:bg-purple-400" // Cor de fundo no hover
+              hoverTextColor="hover:text-gray-950" // Cor do texto no hover
+            />
+            <Buttons
+              Texto="Contact"
+              link="https://www.example.com"
+              bgColor="bg-purple-950" // Cor de fundo
+              textColor="text-white" // Cor do texto
+              hoverBgColor="hover:bg-purple-400" // Cor de fundo no hover
+              hoverTextColor="hover:text-gray-950" // Cor do texto no hover
+            />
+            <Buttons
+              Texto="About"
+              link="https://www.example.com"
+              bgColor="bg-purple-950" // Cor de fundo
+              textColor="text-white" // Cor do texto
+              hoverBgColor="hover:bg-purple-400" // Cor de fundo no hover
+              hoverTextColor="hover:text-gray-950" // Cor do texto no hover
+            />
+          </div>
+        </div>
         <VideoCard
-          titulo={"vivo"}
-          tituloT={"-3%"}
-          tituloL={"18.5%"}
-          svgWidth={"26%"}
+          titulo={"Vivo"}
+          tituloT={"-1%"}
+          tituloL={"21.5%"}
+          svgWidth={"32%"}
           videoUrl={V1}
           thumbUrl={T1}
           svgColor={"#3b0764"}
