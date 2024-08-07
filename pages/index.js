@@ -62,7 +62,7 @@ function Home() {
           <div className="grid grid-cols-2 gap-2">
             <Buttons
               Texto="Contact"
-              link="https://www.example.com"
+              link="/contact"
               bgColor="bg-gray-100" // Cor de fundo
               textColor="text-Black" // Cor do texto
             />

@@ -4,10 +4,7 @@ class MyDocument extends Document {
   render() {
     return (
       <Html>
-        <Head>
-          <title>Judhagsan</title>
-          <link rel="shortcut icon" href="/pixel-perfil.png" />
-        </Head>
+        <Head></Head>
         <body>
           <Main />
           <NextScript />

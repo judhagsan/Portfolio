@@ -17,6 +17,7 @@ function Card({ imageUrl }) {
           src={imageUrl}
           alt="Imagem"
           fill
+          unoptimized
           onContextMenu={(e) => {
             e.preventDefault();
           }}
