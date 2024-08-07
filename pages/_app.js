@@ -3,7 +3,7 @@ import React from "react";
 import Head from "next/head";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
-function page({ Component, pageProps }) {
+function page({ children, Component, pageProps }) {
   return (
     <>
       <Head>
