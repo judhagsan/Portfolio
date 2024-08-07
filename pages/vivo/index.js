@@ -59,7 +59,7 @@ function fadaPage() {
             />
             <Buttons
               Texto="Contact"
-              link="https://www.example.com"
+              link="/contact"
               bgColor="bg-purple-950" // Cor de fundo
               textColor="text-white" // Cor do texto
               hoverBgColor="hover:bg-purple-400" // Cor de fundo no hover
