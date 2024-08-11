@@ -1,5 +1,4 @@
-import React from "react";
-import Buttons from "../component/Buttons";
+import NavBar from "pages/component/Nav.js";
 
 import VideoCard from "../component/CenterCard-video";
 import MobileAlert from "../component/Alerta";
@@ -19,39 +18,17 @@ function fadaPage() {
 
       {/* Centro */}
       <div className="w-4/6 h-full px-2 pb-2 flex flex-col space-y-2">
-        <div className="z-50 absolute left-[35.5%] py-2">
-          <div className="grid grid-cols-3 gap-2">
-            <Buttons
-              Texto="Work"
-              link="https://www.judhagsan.com"
-              bgColor="bg-orange-950" // Cor de fundo
-              textColor="text-white" // Cor do texto
-              hoverBgColor="hover:bg-orange-400" // Cor de fundo no hover
-              hoverTextColor="hover:text-gray-950" // Cor do texto no hover
-            />
-            <Buttons
-              Texto="Contact"
-              link="/contact"
-              bgColor="bg-orange-950" // Cor de fundo
-              textColor="text-white" // Cor do texto
-              hoverBgColor="hover:bg-orange-400" // Cor de fundo no hover
-              hoverTextColor="hover:text-gray-950" // Cor do texto no hover
-            />
-            <Buttons
-              Texto="About"
-              link="https://www.example.com"
-              bgColor="bg-orange-950" // Cor de fundo
-              textColor="text-white" // Cor do texto
-              hoverBgColor="hover:bg-orange-400" // Cor de fundo no hover
-              hoverTextColor="hover:text-gray-950" // Cor do texto no hover
-            />
-          </div>
+        <div className="absolute top-2 left-[25%] z-50">
+          <NavBar
+            BgColor="bg-rose-950"
+            TextColor="text-white"
+            HoverBgColor="hover:bg-gray-900"
+            HoverTextColor="hover:text-gray-50"
+            SvgColor="#431407"
+            LetrasColor="#FFFFFF"
+          />
         </div>
         <VideoCard
-          titulo={"Mestre"}
-          tituloT={"-0.5%"}
-          tituloL={"16%"}
-          svgWidth={"20%"}
           videoUrl={V1}
           thumbUrl={T1}
           svgColor={"#431407"}

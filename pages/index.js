@@ -3,7 +3,7 @@ import Link from "next/link";
 import Card from "./component/Card";
 import HelloCard from "./component/HelloCard";
 import MobileAlert from "./component/Alerta";
-import Buttons from "./component/Buttons";
+import NavBar from "pages/component/Nav.js";
 
 import Elf from "../public/Fairy_Face_3.jpg";
 import vivo from "../public/T_project_vivo.gif";
@@ -58,21 +58,15 @@ function Home() {
 
       {/* Seção Central */}
       <div className="w-3/4 h-full flex flex-col items-center pl-2 pr-2 pb-2">
-        <div className="absolute top-2 left-[37%] z-30">
-          <div className="grid grid-cols-2 gap-2">
-            <Buttons
-              Texto="Contact"
-              link="/contact"
-              bgColor="bg-gray-100" // Cor de fundo
-              textColor="text-Black" // Cor do texto
-            />
-            <Buttons
-              Texto="About"
-              link="https://www.example.com"
-              bgColor="bg-gray-100" // Cor de fundo
-              textColor="text-Black" // Cor do texto
-            />
-          </div>
+        <div className="absolute top-2 left-[25%] z-30">
+          <NavBar
+            BgColor="bg-white"
+            TextColor="text-black"
+            HoverBgColor="hover:bg-gray-900"
+            HoverTextColor="hover:text-gray-50"
+            SvgColor="#FFFFFF"
+            LetrasColor="#242424"
+          />
         </div>
 
         <div className="flex h-full justify-center pt-2 w-full">
