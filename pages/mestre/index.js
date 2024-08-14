@@ -1,7 +1,7 @@
 import NavBar from "pages/component/Nav.js";
 
 import VideoCard from "../component/CenterCard-video";
-import MobileAlert from "../component/Alerta";
+
 import Text from "../component/Text-Rect";
 
 import V1 from "public/collection/Mestre_intro.mp4";
@@ -11,8 +11,6 @@ import T1 from "public/collection/T4.jpg";
 function fadaPage() {
   return (
     <div className="bg-orange-950 flex flex-col md:flex-row h-screen font-custom">
-      <MobileAlert />
-
       {/* Lado Esquerdo */}
       <div className="w-1/6 h-full pt-2 pl-2 pb-2 font-custom flex flex-col"></div>
 

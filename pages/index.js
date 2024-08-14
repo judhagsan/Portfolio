@@ -2,13 +2,9 @@ import React from "react";
 import Link from "next/link";
 import Card from "./component/Card";
 import HelloCard from "./component/HelloCard";
-import MobileAlert from "./component/Alerta";
 import NavBar from "pages/component/Nav.js";
 
-import Elf from "../public/Fairy_Face_3.jpg";
 import vivo from "../public/T_project_vivo.gif";
-import survive from "../public/LTS-445-JS.jpg";
-import pilot from "../public/Pilot_mech_.jpg";
 import colibru from "public/Colection.gif";
 import frames from "public/Mestre_intro.gif";
 import I1 from "public/judha-guilherme-fish1.jpg";
@@ -17,8 +13,6 @@ import I2 from "public/judha-guilherme-render-4.jpg";
 function Home() {
   return (
     <div className="flex h-screen font-custom">
-      <MobileAlert />
-
       {/* Seção Esquerda */}
       <div className="w-1/4 h-full pt-2 pl-2 pb-2 grid grid-rows-3 gap-2">
         <Link href="/vivo">
@@ -81,36 +75,36 @@ function Home() {
 
       {/* Seção Direita */}
       <div className="w-1/4 h-full pt-2 pr-2 pb-2 grid grid-rows-3 gap-2">
-        <Link href="/fairy">
+        <Link href="/vivo">
           <Card
-            imageUrl={Elf}
-            title="Character Design"
-            titlePositionLeft="5.2%"
-            description="Fairy"
+            imageUrl={vivo}
+            title="Motion Design"
+            titlePositionLeft="6%"
+            description="vivo"
             fontSize="2vw"
-            descriptionPositionLeft="7.7%"
+            descriptionPositionLeft="8%"
             wSvg="15%"
           />
         </Link>
-        <Link href="/survive">
+        <Link href="/vivo">
           <Card
-            imageUrl={survive}
-            title="Character Design"
-            titlePositionLeft="5.2%"
-            description="Survive"
+            imageUrl={vivo}
+            title="Motion Design"
+            titlePositionLeft="6%"
+            description="vivo"
             fontSize="2vw"
-            descriptionPositionLeft="6.8%"
+            descriptionPositionLeft="8%"
             wSvg="15%"
           />
         </Link>
-        <Link href="/pilot">
+        <Link href="/vivo">
           <Card
-            imageUrl={pilot}
-            title="Character Design"
-            titlePositionLeft="5.2%"
-            description="Pilot"
+            imageUrl={vivo}
+            title="Motion Design"
+            titlePositionLeft="6%"
+            description="vivo"
             fontSize="2vw"
-            descriptionPositionLeft="7.7%"
+            descriptionPositionLeft="8%"
             wSvg="15%"
           />
         </Link>

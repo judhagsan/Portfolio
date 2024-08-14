@@ -1,6 +1,6 @@
 import React from "react";
 import Card from "../component/Card";
-import MobileAlert from "../component/Alerta";
+
 import Text from "../component/Text-Rect";
 
 import F1 from "public/frames/Strok_wave.gif";
@@ -12,8 +12,6 @@ import F5 from "public/frames/Crown_Granatus.gif";
 function fadaPage() {
   return (
     <div className="bg-neutral-800 flex flex-col md:flex-row h-screen font-custom">
-      <MobileAlert />
-
       {/* Lado Esquerdo */}
       <div className="w-1/3 h-full pt-2 pl-2 pb-2 font-custom flex flex-col">
         <div className="flex-grow grid grid-rows-2 gap-2">

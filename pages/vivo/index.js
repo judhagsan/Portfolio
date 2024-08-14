@@ -3,7 +3,6 @@ import Card from "../component/Card";
 import NavBar from "pages/component/Nav.js";
 
 import VideoCard from "../component/CenterCard-video";
-import MobileAlert from "../component/Alerta";
 import Text from "../component/Text-Rect";
 
 import V1 from "public/vivo/02_Vivo_15s_16x9_v5.mp4";
@@ -24,8 +23,6 @@ import T8 from "public/vivo/1_Vivo_15s_1x1_V2.gif";
 function fadaPage() {
   return (
     <div className="bg-purple-950 flex flex-col md:flex-row h-screen font-custom">
-      <MobileAlert />
-
       {/* Lado Esquerdo */}
       <div className="w-1/3 h-full pt-2 pl-2 pb-2 font-custom flex flex-col">
         <div className="flex-grow grid grid-rows-2 gap-2">

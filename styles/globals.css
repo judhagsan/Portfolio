@@ -3,7 +3,5 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: "SmallBoldPixel";
-  src: url("../public/SmallBoldPixel.ttf") format("truetype");
   /* Adicione outros formatos de fonte se necessário */
 }
