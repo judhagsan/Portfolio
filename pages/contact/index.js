@@ -1,13 +1,12 @@
 // pages/contact.js
 import React, { useState } from "react";
-import MobileAlert from "../component/Alerta";
+
 import NavBar from "pages/component/Nav.js";
 import ContactCard from "../component/ContactCard";
 
 function Contact() {
   return (
     <div className="flex h-screen font-custom">
-      <MobileAlert />
       {/* Lado Esquerdo */}
       <div className="w-1/6 h-full pt-2 pl-2 pb-2 font-custom flex flex-col"></div>
 
