@@ -11,7 +11,7 @@ function Nav({
 }) {
   return (
     <div className="grid grid-cols-3">
-      <div className="absolute top-[-10%] left-[7%] w-[20%] z-30">
+      <div className="absolute top-[-10%] left-[7%] w-[20%] md:w-[20%] z-30">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 1016.64 317.51"
@@ -46,7 +46,7 @@ function Nav({
           </g>
         </svg>
       </div>
-      <div className="grid grid-cols-3 gap-2">
+      <div className="flex grid-cols-3 gap-2">
         <Buttons
           Texto="Work"
           link="https://www.judhagsan.com"

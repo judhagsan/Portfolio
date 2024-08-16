@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 
 function Contacts({
   Texto,
@@ -11,7 +11,7 @@ function Contacts({
   return (
     <a
       href={link}
-      className={`z-30 h-[70%] mt-1 rounded-full px-2 font-medium text-center transition-colors duration-300 block ${bgColor} ${textColor} ${hoverBgColor} ${hoverTextColor}`}
+      className={`z-30 md:h-[75%] mt-1 rounded-full px-2 font-medium text-center transition-colors duration-300 block ${bgColor} ${textColor} ${hoverBgColor} ${hoverTextColor}`}
     >
       {Texto}
     </a>
