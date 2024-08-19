@@ -7,6 +7,7 @@ import NavBar from "pages/component/Nav.js";
 import vivo from "../public/T_project_vivo.gif";
 import colibru from "public/Colection.gif";
 import frames from "public/Mestre_intro.gif";
+import polovivo from "public/Intro_Polo_Vivo.gif";
 import I1 from "public/judha-guilherme-fish1.jpg";
 import I2 from "public/judha-guilherme-render-4.jpg";
 
@@ -113,9 +114,9 @@ function Home() {
 
       {/* Seção Direita */}
       <div className="hidden md:grid md:w-1/4 h-full pt-2 pr-2 pb-2 grid-rows-3 gap-2">
-        <Link href="/vivo">
+        <Link href="/polovivo">
           <Card
-            imageUrl={vivo}
+            imageUrl={polovivo}
             title="Motion Design"
             titlePositionLeft="6%"
             description="vivo"

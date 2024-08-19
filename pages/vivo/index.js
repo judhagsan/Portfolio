@@ -1,50 +1,19 @@
 import React from "react";
-import Card from "../component/Card";
 import NavBar from "pages/component/Nav.js";
-
 import VideoCard from "../component/CenterCard-video";
-import Text from "../component/Text-Rect";
 
 import V1 from "public/vivo/02_Vivo_15s_16x9_v5.mp4";
 import V2 from "public/vivo/Filme 03_10s_ Com Audio_Online_V9.mp4";
-import V3 from "public/vivo/15s_9x16_2°_V2.mp4";
-import V4 from "public/vivo/15s 9x16_V3.mp4";
-import V5 from "public/vivo/2_Vivo_15s_1x1_V2.mp4";
 
 import T1 from "public/vivo/T1.jpg";
 import T2 from "public/vivo/T2.jpg";
-import T3 from "public/vivo/T3.jpg";
-import T4 from "public/vivo/T4.jpg";
-import T5 from "public/vivo/T5.jpg";
-import T6 from "public/vivo/Banner_art.gif";
-import T7 from "public/vivo/Banner_768x1080.gif";
-import T8 from "public/vivo/1_Vivo_15s_1x1_V2.gif";
 
-function fadaPage() {
+function Page() {
   return (
-    <div className="bg-purple-950 flex flex-col md:flex-row h-screen font-custom">
-      {/* Lado Esquerdo */}
-      <div className="w-1/3 h-full pt-2 pl-2 pb-2 font-custom flex flex-col">
-        <div className="flex-grow grid grid-rows-2 gap-2">
-          <div className="flex-col grid grid-cols-3 gap-2">
-            <Card imageUrl={T7} />
-            <div className="col-span-2">
-              <Card imageUrl={T8} />
-            </div>
-          </div>
-          <Card imageUrl={T6} />
-          <Text
-            P1={`Projeto desenvolvido em parceria com a Sugarcane Filmes para a marca Vivo consistiu na criação de uma série de peças de motion design voltadas para as campanhas de Natal e Black Friday com a voz da Ivete Sangalo.`}
-            P2={`Para atender às diversas necessidades de divulgação, foram criadas peças nos seguintes formatos: 1:1 16:9 9:16.`}
-            P3={`Além dos vídeos, foram criados banners animados para utilização em lives e websites incorporando animações suaves e loops contínuos.`}
-            cortexto={"White"}
-          />
-        </div>
-      </div>
-
+    <div className="bg-purple-950 flex flex-col h-screen">
       {/* Centro */}
-      <div className="w-1/2 h-full px-2 pb-2 flex flex-col space-y-2">
-        <div className="absolute top-2 left-[30%] z-50">
+      <div className="w-full h-full px-2 pb-2 flex flex-col md:px-0 md:pr-2 md:flex-row space-y-2 md:space-x-2">
+        <div className="absolute top-2 left-[5%] md:left-[10%] z-50">
           <NavBar
             BgColor="bg-violet-950"
             TextColor="text-white"
@@ -57,19 +26,28 @@ function fadaPage() {
         <VideoCard videoUrl={V1} thumbUrl={T1} />
         <VideoCard videoUrl={V2} thumbUrl={T2} />
       </div>
-
-      {/* Lado Direito */}
-      <div className="w-1/3 h-full pt-2 pr-2 flex flex-col grid-rows-2 space-y-2">
-        <div className="w-full h-[89%] grid grid-cols-2 gap-2">
-          <VideoCard videoUrl={V3} thumbUrl={T3} />
-          <VideoCard videoUrl={V4} thumbUrl={T4} />
-        </div>
-        <div className="w-full h-full pb-2">
-          <VideoCard videoUrl={V5} thumbUrl={T5} />
-        </div>
+      <div className="px-2 pb-2 md:grid md:grid-cols-2 gap-4 text-sm md:text-base">
+        <p className="text-white pb-2 text-justify">
+          Projeto desenvolvido em parceria com a Sugarcane Filmes para a marca
+          Vivo consistiu na criação de uma série de peças de motion design
+          voltadas para as campanhas de Natal e Black Friday com a voz da Ivete
+          Sangalo. Para atender às diversas necessidades de divulgação, foram
+          criadas peças nos seguintes formatos: 1:1 16:9 9:16. Além dos vídeos,
+          foram criados banners animados para utilização em lives e websites
+          incorporando animações suaves e loops contínuos.
+        </p>
+        <p className="text-white text-justify">
+          A project developed in partnership with Sugarcane Filmes for the Vivo
+          brand consists of creating a series of motion design pieces for the
+          Christmas and Black Friday campaigns, featuring the voice of Ivete
+          Sangalo. To meet the various advertising needs, pieces were created in
+          the following formats: 1:1 16:9 9:16. In addition to the videos,
+          animated banners were created for use in live broadcasts and websites,
+          incorporating smooth animations and continuous loops.
+        </p>
       </div>
     </div>
   );
 }
 
-export default fadaPage;
+export default Page;
