@@ -11,7 +11,7 @@ function Page() {
   return (
     <div className="bg-gray-950 flex flex-col h-screen">
       {/* Centro */}
-      <div className="h-full w-full px-2 pb-2 flex flex-col space-y-2 md:mx-auto md:w-4/6">
+      <div className="h-full w-full px-2 pb-2 flex flex-col space-y-2 md:mx-auto md:h-3/4 md:w-4/6">
         <div className="absolute ml-2 md:ml-60 top-2 z-50">
           <NavBar
             BgColor="bg-black"
