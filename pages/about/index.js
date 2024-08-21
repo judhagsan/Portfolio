@@ -26,7 +26,7 @@ function page() {
           <div className="px-2 pb-2 md:pt-20 items-center gap-4">
             <p className="text-black pb-2 text-justify">
               <i>PT-BR</i> ✦ Sou Judhá Guilherme Santos, um profissional
-              especializado em Motion Design e Animação 3D com uma carreira que
+              especializado em Motion Design 2D e 3D com uma carreira que
               começou em 2016. Desde então, desenvolvi uma sólida experiência na
               criação de conteúdos visuais impactantes e animações envolvente,
               tendo 8 anos de experiência e um portfólio que abrange projetos
@@ -34,12 +34,12 @@ function page() {
             </p>
             <p className="text-black pb-2 text-justify">
               <i>ENG</i> ✦ I am Judhá Guilherme Santos, a professional
-              specialized in Motion Design and 3D Animation with a career that
-              began in 2016. Since then, I have developed solid experience in
-              creating impactful visual content and engaging animations. With 8
-              years of experience and a portfolio that includes projects for
-              renowned companies such as Vivo and Google, I bring a wealth of
-              expertise to every project.
+              specialized in Motion Design 2D and 3D with a career that began in
+              2016. Since then, I have developed solid experience in creating
+              impactful visual content and engaging animations. With 8 years of
+              experience and a portfolio that includes projects for renowned
+              companies such as Vivo and Google, I bring a wealth of expertise
+              to every project.
             </p>
           </div>
         </div>
