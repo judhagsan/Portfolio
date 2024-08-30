@@ -1,4 +1,3 @@
-import { SpeedInsights } from "@vercel/speed-insights/next";
 import Document, {
   children,
   Html,
@@ -17,7 +16,6 @@ class MyDocument extends Document {
           <NextScript />
 
           {children}
-          <SpeedInsights />
         </body>
       </Html>
     );

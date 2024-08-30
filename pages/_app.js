@@ -1,8 +1,10 @@
 import "../styles/globals.css";
 import React from "react";
 import Head from "next/head";
+import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/react";
 
-function page({ children, Component, pageProps }) {
+function page({ Component, pageProps }) {
   return (
     <>
       <Head>
@@ -14,6 +16,8 @@ function page({ children, Component, pageProps }) {
         ></meta>
       </Head>
       <Component {...pageProps} />
+      <Analytics />
+      <SpeedInsights />
     </>
   );
 }
