@@ -3,7 +3,7 @@ import Image from "next/image";
 
 function Card({ imageUrl }) {
   const cardStyle = {
-    Width: "100%",
+    width: "100%", // Corrigido para 'width'
     height: "100%",
     borderRadius: "2vw",
     overflow: "hidden",
@@ -11,16 +11,15 @@ function Card({ imageUrl }) {
 
   return (
     <div style={cardStyle}>
-      <div className="h-full w-full relative">
+      <div className="relative h-full w-full">
         <Image
           className="object-cover"
           src={imageUrl}
           alt="Imagem"
           fill
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" // Ajuste os valores conforme necessário
           unoptimized
-          onContextMenu={(e) => {
-            e.preventDefault();
-          }}
+          onContextMenu={(e) => e.preventDefault()}
         />
       </div>
     </div>
